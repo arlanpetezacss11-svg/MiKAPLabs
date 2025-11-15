@@ -460,49 +460,29 @@ section { padding: 10rem 8%; }
     height: 220px;
   }
 }
-
-.contact {
-  background-color: var(--second-bg-color);
-  padding: 8rem 8%;
-}
-
-.contact .heading {
-  text-align: center;
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}
-
-.contact .section-subtitle {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--text-secondary);
-  margin-bottom: 4rem;
-}
-
+/* === CONTACT === */
 .contact-wrapper {
   display: flex;
   justify-content: center;
-  max-width: 1300px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .contact-info-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 4rem;
   max-width: 900px;
+  width: 100%;
 }
 
 .contact-info-card {
-  background: white;
-  padding: 2.8rem;
-  border-radius: 1.2rem;
-  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  background: var(--card-bg);
+  border: 1px solid rgba(178, 34, 34, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(139, 0, 0, 0.15);
   transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .contact-info-card:hover {
