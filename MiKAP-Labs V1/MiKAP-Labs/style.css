@@ -53,110 +53,42 @@ body {
   box-shadow: 0 0 20px rgba(178, 34, 34, 0.2);
 }
 
-
-#menu-icon {
-  font-size: 3.5rem;
-  color: var(--main-color);
-  display: none;
-}
-
 .logo {
-  font-size: 2.6rem;
-  color: var(--text-color);
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: 0.3s ease;
-  letter-spacing: -0.5px;
+  color: var(--text-color);
 }
-
-.logo:hover {
-  opacity: 0.8;
-}
-
-span {
-  background: linear-gradient(
-    270deg,
-    #3b82f6 10%,
-    #60a5fa 100%
-  );
-  background-clip: text;
-  color: transparent;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
+.logo span {
+  color: var(--accent-color);
+  text-shadow: var(--shadow-glow);
 }
 
 .navbar a {
-  font-size: 1.6rem;
-  color: #64748b;
   margin-left: 3rem;
-  font-weight: 500;
-  transition: 0.3s ease;
-  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: 1.6rem;
   position: relative;
+  transition: 0.3s;
 }
-
-.navbar a:hover {
-  color: var(--main-color);
+.navbar a:hover, .navbar a.active {
+  color: var(--accent-color);
 }
-
 .navbar a::after {
   content: '';
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--main-color);
-  transition: width 0.3s ease;
+  background: var(--accent-color);
+  transition: 0.3s ease;
 }
-
-.navbar a:hover::after {
+.navbar a:hover::after, .navbar a.active::after {
   width: 100%;
+  box-shadow: var(--shadow-glow);
 }
 
-.navbar a.active {
-  color: var(--main-color);
-}
-
-.navbar a.active::after {
-  width: 100%;
-}
-
-.gradient-btn {
-  font-size: 1.5rem;
-  padding: 1.4rem 3.5rem;
-  border-radius: 0.8rem;
-  background: var(--main-color);
-  letter-spacing: 0.3px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  color: white;
-  border: none;
-  font-weight: 600;
-}
-
-.gradient-btn:hover {
-  background: white;
-  transform: translateY(-2px);
-}
-
-section {
-  min-height: 100vh;
-  padding: 8rem 8%;
-}
-
-.heading {
-  font-size: 5rem;
-  text-align: center;
-  margin: 0 0 5rem 0;
-  font-weight: 700;
-  letter-spacing: -1px;
-  color: var(--text-color);
-}
 
 .home {
   display: flex;
