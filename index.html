@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiKAP-Labs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    /* === TEAM MEMBERS === */
+    .team-members {
+      display: flex;
+      /* Use flexbox for horizontal layout */
+      overflow-x: auto;
+      /* Enable horizontal scrolling */
+      gap: 2rem;
+      /* Spacing between team members */
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+      /* Padding for scrollbar */
+    }
+
+    .team-member {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(178, 34, 34, 0.1);
+      transition: 0.3s;
+      min-width: 200px;
+      /* Minimum width for each member */
+      text-align: center;
+      /* Center content within the card */
+    }
+
+    .team-member:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .member-img {
+      width: 100%;
+      /* Make image fill the container */
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      max-width: 150px;
+      /* Limit image width */
+      height: auto;
+      /* Maintain aspect ratio */
+    }
+
+    .team-member h4 {
+      color: var(--text-color);
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      /* Spacing between name and role */
+    }
+
+    .role {
+      font-size: 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    /* === PROJECTS === */
+    .projects-box {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 3rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(178, 34, 34, 0.15);
+      border-radius: 1rem;
+      text-align: center;
+      padding: 2.5rem;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent-color);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(178, 34, 34, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#home" class="logo">MiKAP<span>Labs</span></a>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+  </header>
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Your <span class="blue-text">Digital Journey</span> Starts with <span class="blue-text">MiKAP Labs.</span></h1>
+      <p class="hero-subtitle">Welcome to MiKAP Labs — Where Creativity Meets Code!</p>
+
+      <div class="btn-group">
+        <a href="#about" class="btn">Learn more</a>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h2 class="heading">About <span>Us</span></h2>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">
+          <i class='bx bx-building-house'></i>
+        </div>
+        <h3>Company Overview</h3>
+        <p>MiKAP Labs is a creative student tech group founded by Mia, Kian, Arlan, and Paula. We design and develop simple, modern, and user-friendly websites that blend creativity and innovation. Our goal is to turn ideas into digital experiences that inspire and connect people.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">
+          <i class='bx bx-target-lock'></i>
+        </div>
+        <h3>Mission</h3>
+        <p>To empower businesses with cutting-edge technology solutions that drive growth, efficiency, and innovation. We strive to be the trusted partner for companies seeking digital transformation.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">
+          <i class='bx bx-show-alt'></i>
+        </div>
+        <h3>Vision</h3>
+        <p>To be the leading IT solutions provider recognized for excellence, innovation, and customer satisfaction. We envision a future where technology seamlessly integrates with business success.</p>
+      </div>
+      <div class="about-card team-card">
+        <div class="about-icon">
+          <i class='bx bx-group'></i>
+        </div>
+        <h3>Meet the Team</h3>
+        <p>Our dedicated team of experts brings years of experience in technology and innovation.</p>
+
+        <div class="team-members">
+          <div class="team-member">
+            <img src="ARLAN.jpg" alt="Team Member" class="member-img">
+            <h4>Arlan Peteza</h4>
+            <p class="role">Programmer/Developer</p>
+          </div>
+          <div class="team-member">
+            <img src="MIA.jpg" alt="Team Member" class="member-img">
+            <h4>Mia Casiño</h4>
+            <p class="role">UI/UX Designer</p>
+          </div>
+          <div class="team-member">
+            <img src="KIAN.jpg" alt="Team Member" class="member-img">
+            <h4>Kian Luceño</h4>
+            <p class="role">Tester</p>
+          </div>
+          <div class="team-member">
+            <img src="PAU.jpg" alt="Team Member" class="member-img">
+            <h4>Paula Delfino</h4>
+            <p class="role">Project Manager</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <p class="section-subtitle">Company Offers</p>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-code-alt"></i>
+          <h4>Web Development</h4>
+          <p>Custom web applications and responsive websites built with modern technologies. We create scalable, secure, and user-friendly solutions tailored to your business needs.</p>
+        </div>
+      </div>
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-mobile-alt"></i>
+          <h4>Mobile App Design</h4>
+          <p>Native and cross-platform mobile applications for iOS and Android. We design intuitive interfaces and develop robust apps that engage users and drive business growth.</p>
+        </div>
+      </div>
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-palette"></i>
+          <h4>Graphic Design & Branding</h4>
+          <p>Creative visual identity and branding solutions that make your business stand out. From logos to marketing materials, we craft designs that resonate with your audience.</p>
+        </div>
+      </div>
+      <div class="service-box">
+        <div class="service-info">
+          <i class="bx bx-laptop"></i>
+          <h4>IT Consulting</h4>
+          <p>Strategic technology consulting to optimize your IT infrastructure. We provide expert guidance on digital transformation, cloud solutions, and technology roadmaps.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <h2 class="heading">Our <span>Portfolio</span></h2>
+    <p class="section-subtitle">Explore our successful projects and client solutions</p>
+    <div class="projects-box">
+      <div class="project-card">
+        <div class="project-number">1</div>
+        <img src="ECOMMERCE PLATFORM.jpg" alt="E-Commerce Platform">
+        <h3>E-Commerce Platform</h3>
+        <p>Full-stack e-commerce solution with payment integration, inventory management, and customer analytics. Built with React and Node.js for optimal performance.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-number">2</div>
+        <img src="MedHealth1.jpg" alt="Healthcare Mobile App">
+        <h3>Healthcare Mobile App</h3>
+        <p>HIPAA-compliant mobile application for patient management and telemedicine. Features appointment scheduling, secure messaging, and health records access.</p>
+      </div>
+      <div class="project-card">
+        <div class="project-number">3</div>
+        <img src="Visual-Identity-design-logos-layout-color-font.webp" alt="Corporate Branding Package">
+        <h3>Corporate Branding Package</h3>
+        <p>Complete brand identity design including logo, color palette, typography, and marketing collateral. Helped client establish strong market presence.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Us</span></h2>
+    <p class="section-subtitle">Get in touch with our team</p>
+
+    <div class="contact-wrapper">
+      <div class="contact-info-section">
+        <div class="contact-info-card">
+          <i class='bx bx-envelope'></i>
+          <h3>Email</h3>
+          <p>mikaplabs@gmail.com</p>
+          <p>mikaplabs@gmail.com</p>
+        </div>
+        <div class="contact-info-card">
+          <i class='bx bx-phone'></i>
+          <h3>Phone</h3>
+          <p>+63 991 770 4388</p>
+          <p>+63 991 770 4388</p>
+        </div>
+        <div class="contact-info-card">
+          <i class='bx bx-map'></i>
+          <h3>Office</h3>
+          <p>123 Business Street</p>
+          <p>Tech City, TC 12345</p>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon-large">
+            <i class='bx bx-share-alt'></i>
+          </div>
+          <h3>Social Media</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+            <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+            <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="#" target="_blank">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="bx bxl-twitter"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="#" target="_blank">
+        <i class="bx bxl-instagram-alt"></i>
+      </a>
+    </div>
+    <ul class="list">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+    <p class="copyright">2025 MiKAP Labs | Building Resilient Communities Together</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
